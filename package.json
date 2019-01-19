@@ -1,0 +1,21 @@
+{
+  "name": "kblog",
+  "version": "1.0.0",
+  "description": "Kiritow's Blog Backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://kiritow.com:3000/Kiritow/kblog"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Kiritow",
+  "license": "MIT",
+  "dependencies": {
+    "mime": "^2.4.0"
+  }
+}
