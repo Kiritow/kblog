@@ -105,7 +105,7 @@ async function RebuildSite() {
 async function request_handler(req,res) {
     let obj=url.parse(req.url,true)
     if(req.method=="GET") {
-        let normPath=path.normalize(obj.pathname)
+        let normPath=path.normalize(decodeURI(obj.pathname))
         let localPath=path.join(ROOT_DIR,normPath)
         try {
             let stats=await promisify(fs.stat)(localPath)
